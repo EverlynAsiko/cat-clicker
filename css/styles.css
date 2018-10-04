@@ -1,3 +1,6 @@
+#main {
+	display: flex;
+}
 div {
 	text-align: center;
 }
