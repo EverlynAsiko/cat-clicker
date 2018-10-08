@@ -1,8 +1,30 @@
 #main {
+	font-family: "Lato", sans-serif;
 	display: flex;
+	flex-wrap: wrap;
 }
+
 div {
 	text-align: center;
+}
+.header {
+	background-color: #1abc9c;
+	color: white;
+	flex: 100%;
+}
+
+#catlist {
+	flex: 20%;
+	border-radius: 4px;
+	background-color: #f1f1f1;
+}
+
+#catlist div{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+#images {
+	flex: 80%;
 }
 
 button {
@@ -12,6 +34,12 @@ button {
 }
 
 img {
-	width: 30%;
-	height: 30%;
+	width: 60%;
+	height: 60%;
+}
+
+@media screen and (max-width: 700px) {
+    #main {   
+        flex-direction: column;
+    }
 }
